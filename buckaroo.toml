@@ -1,1 +1,5 @@
 targets = [ "//:exception" ]
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-config"
+version = "branch=master"
