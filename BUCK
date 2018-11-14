@@ -7,6 +7,9 @@ cxx_library(
   srcs = glob([
     'src/**/*.cpp', 
   ]), 
+  deps = [
+    'buckaroo.github.buckaroo-pm.boost-config//:config',     
+  ], 
   visibility = [
     'PUBLIC',
   ],
