@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'example-io', 
+  srcs = [
+    'example_io.cpp', 
+  ], 
+  deps = [
+    '//:exception', 
+  ], 
+)
