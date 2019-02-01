@@ -1,3 +1,6 @@
+load('//:subdir_glob.bzl', 'subdir_glob')
+load('//:buckaroo_macros.bzl', 'buckaroo_deps')
+
 cxx_library(
   name = 'exception',
   header_namespace = 'boost',
@@ -5,11 +8,9 @@ cxx_library(
     ('include/boost', '**/*.hpp'),
   ]),
   srcs = glob([
-    'src/**/*.cpp', 
-  ]), 
-  deps = [
-    'buckaroo.github.buckaroo-pm.boost-config//:config',     
-  ], 
+    'src/**/*.cpp',
+  ]),
+  deps = buckaroo_deps(),
   visibility = [
     'PUBLIC',
   ],
