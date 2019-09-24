@@ -1,0 +1,5 @@
+targets = [ "//:exception" ]
+
+[[dependency]]
+package = "github.com/buckaroo-pm/boost-config"
+version = "1.66.0"
